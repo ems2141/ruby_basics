@@ -6,6 +6,9 @@ def roman_numerals number
   ones = number % 10
   tens = number % 100/10
   hundreds = number %1000/100
+  thousands = number/1000
+
+  roman = "M"*thousands
 
   if hundreds == 9
     roman = roman + "CM"
