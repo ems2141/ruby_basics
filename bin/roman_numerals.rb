@@ -4,6 +4,17 @@ number = gets.chomp.to_i
 def roman_numerals number
   roman = ''
   ones = number % 10
+  tens = number % 100/10
+
+  if tens == 9
+    roman = roman + "XC"
+  elsif ones == 4
+    roman = roman + "XL"
+  else
+    roman = roman + "L" * (number % 100/50)
+    roman = roman + "X" * (number % 50/10)
+  end
+
 
   if ones == 9
     roman = roman + "IX"
