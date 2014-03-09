@@ -11,7 +11,7 @@ describe "RomanNumerals" do
   end
 
   it "handles the numbers that are just below the next boundary" do
-    pending
+
     run_script("roman_numerals.rb")
     type("9")
 
