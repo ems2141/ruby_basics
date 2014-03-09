@@ -29,7 +29,7 @@ describe "RomanNumerals" do
   end
 
   it "converts the triple digit number to traditional roman numeral" do
-    pending
+
     run_script("roman_numerals.rb")
     type("257")
 
